@@ -2,7 +2,7 @@
 import { h } from "preact";
 import { tw } from "@twind";
 
-export interface ButtonProps {
+interface ButtonProps {
   color?: string;
   variant?: string;
   children?: any;
@@ -17,7 +17,7 @@ function _textColor(color?: string) {
   return textColor
 }
 
-export default function DesignButton(props: ButtonProps) {
+export default function Button(props: ButtonProps) {
   const textColor = _textColor(props.color);
   const buttonClass = tw`text(${textColor})`;
 
